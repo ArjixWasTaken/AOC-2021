@@ -10,7 +10,7 @@ fun main() {
                     continue
                 }
 
-                if (line.toInt()!! > lastDepth!!) {
+                if (line.toInt() > lastDepth!!) {
                     ++increasements
                 }
                 lastDepth = line.toInt()
@@ -24,8 +24,8 @@ fun main() {
         val lines = getLines()
 
         for (i in 2 until lines.size - 1) {
-            val groupA = lines[i - 2].toInt()!! + lines[i - 1].toInt()!! + lines[i].toInt()!!
-            val groupB = lines[i - 1].toInt()!! + lines[i].toInt()!! + lines[i + 1].toInt()!!
+            val groupA = lines[i - 2].toInt() + lines[i - 1].toInt() + lines[i].toInt()
+            val groupB = lines[i - 1].toInt() + lines[i].toInt() + lines[i + 1].toInt()
 
             if (groupA < groupB) {
                 ++increasements
