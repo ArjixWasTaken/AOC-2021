@@ -34,7 +34,7 @@ fun main() {
         return increasements
     }
 
-    val input = readInput("Day01")
+    val input = readInput("Day01_input")
     println(part1(input))
     println(part2(input))
 }
