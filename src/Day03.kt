@@ -26,6 +26,6 @@ fun main() {
         return gamma.toInt(2) * epsilon.toInt(2)
     }
 
-    val input = readInput("Day03")
+    val input = readInput("Day03_input")
     println(part1(input))
 }
